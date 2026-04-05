@@ -154,7 +154,7 @@ Questions? Email me at: [your-email@example.com]
 ```markdown
 # 🎨 Professional Portfolio Template
 
-**💰 Want Commercial Use? [Get the Premium License on Gumroad ($29)](https://gumroad.com/YOUR_GUMROAD_USERNAME/l/portfolio-template)**
+**💰 Want Commercial Use? [Get the Premium License on Gumroad ($29)](https://gumroad.com/pialmahmud)**
 
 This template is available with:
 
@@ -191,7 +191,7 @@ In Gumroad product edit page, add to description:
 📦 No build process needed
 
 GitHub: https://github.com/YOUR_USERNAME/portfolio-template
-Get it: https://gumroad.com/YOUR_GUMROAD_USERNAME/l/portfolio-template
+Get it: https://gumroad.com/pialmahmud
 
 #webdev #portfolio #buildinpublic
 ```
@@ -373,7 +373,7 @@ Social Media:
 
 **"Can I use this commercially?"**
 
-> Thanks for asking! The free GitHub version is for personal use only. For commercial projects, please grab the professional license on Gumroad: https://gumroad.com/[link]. It includes unlimited commercial use, support, and lifetime updates. Let me know if you have questions!
+> Thanks for asking! The free GitHub version is for personal use only. For commercial projects, please grab the professional license on Gumroad: https://gumroad.com/pialmahmud. It includes unlimited commercial use, support, and lifetime updates. Let me know if you have questions!
 
 **"Will you add feature X?"**
 

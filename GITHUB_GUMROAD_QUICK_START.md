@@ -43,7 +43,7 @@ Open terminal in your project folder:
 
 ```bash
 # Navigate to project
-cd ~/Documents/new\ websites/web-product-for-sell/protfolio_templete
+cd ~/Documents/new\ websites/web-product-for-sell/Modern-Full-Stack-Portfolio-Template
 
 # Initialize Git (if not already done)
 git init
@@ -55,8 +55,8 @@ git branch -M main
 ### Step 3️⃣: Connect to GitHub
 
 ```bash
-# Replace YOUR_USERNAME with your actual GitHub username
-git remote add origin https://github.com/YOUR_USERNAME/portfolio-template.git
+# Connect to your GitHub repository
+git remote add origin https://github.com/mahmudpial/portfolio-template.git
 git push -u origin main
 ```
 
@@ -73,7 +73,7 @@ Create a `.zip` file of your project:
 ```bash
 # On Mac/Linux
 cd ~/Documents/new\ websites/web-product-for-sell
-zip -r portfolio-template.zip protfolio_templete/
+zip -r portfolio-template.zip Modern-Full-Stack-Portfolio-Template-main/
 
 # On Windows: Right-click folder → Send to → Compressed (zipped) folder
 ```
@@ -110,7 +110,7 @@ zip -r portfolio-template.zip protfolio_templete/
    - ✅ Email support
    - ✅ Future updates
 
-   **Source Code:** https://github.com/YOUR_USERNAME/portfolio-template
+   **Source Code:** https://github.com/mahmudpial/portfolio-template
    Free preview available on GitHub!
 
    ```
@@ -365,7 +365,7 @@ If you have issues:
 
 1. Check GitHub Issues
 2. Review Gumroad FAQ
-3. Email: pialmahmud@example.com
+3. Email: mahmudpial4763@gmail.com
 4. Twitter: @pialmahmud
 
 ---

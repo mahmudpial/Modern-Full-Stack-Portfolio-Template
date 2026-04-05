@@ -31,12 +31,12 @@ This document explains how to sell your portfolio template on Gumroad while main
 2. **Push your project to GitHub:**
 
    ```bash
-   cd ~/Documents/new\ websites/web-product-for-sell/protfolio_templete
+   cd ~/Documents/new\ websites/web-product-for-sell/Modern-Full-Stack-Portfolio-Template-main
    git init
    git add .
    git commit -m "Initial commit: Premium Portfolio Template"
    git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/portfolio-template-premium.git
+   git remote add origin https://github.com/mahmudpial/portfolio-template-premium.git
    git push -u origin main
    ```
 
@@ -84,7 +84,7 @@ This document explains how to sell your portfolio template on Gumroad while main
 
    ```bash
    # Push to public repo
-   git remote set-url origin https://github.com/YOUR_USERNAME/portfolio-template.git
+   git remote set-url origin https://github.com/mahmudpial/portfolio-template.git
    git push -u origin main
    ```
 
@@ -101,7 +101,7 @@ This document explains how to sell your portfolio template on Gumroad while main
 
    **This is the FREE preview version.**
 
-   ### ⬇️ [GET FULL VERSION ON GUMROAD](https://gumroad.com/your-username/l/portfolio-template)
+   ### ⬇️ [GET FULL VERSION ON GUMROAD](https://gumroad.com/pialmahmud)
 
    **Premium Version Includes:**
 
@@ -235,7 +235,7 @@ Here's why:
 
 ```bash
 # Navigate to your project
-cd ~/Documents/new\ websites/web-product-for-sell/protfolio_templete
+cd ~/Documents/new\ websites/web-product-for-sell/Modern-Full-Stack-Portfolio-Template
 
 # Initialize git
 git init
@@ -399,7 +399,7 @@ A: Yes! Make it public once you've sold enough licenses.
 
 ## 📞 Need Help?
 
-Contact: pialmahmud@example.com  
+Contact: mahmudpial4763@gmail.com  
 Twitter: @pialmahmud  
 GitHub: @pialmahmud  
 Gumroad: https://gumroad.com/pialmahmud

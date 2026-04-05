@@ -1,6 +1,6 @@
 # 🚀 Modern Full-Stack Portfolio Template (Backend-Ready)
 
-**Created by:** [Pial Mahmud](https://github.com/pialmahmud)
+**Created by:** [Pial Mahmud](https://github.com/mahmudpial)
 
 > A premium, high-performance frontend portfolio designed for software engineers and developers.  
 > Built with a **"Modern Monolith"** philosophy—seamless, mobile-first UI today with architectural hooks for Laravel, React, or Vue backends tomorrow.
@@ -9,7 +9,7 @@
 
 ## 🎁 GET THE PREMIUM VERSION
 
-### ⬇️ [DOWNLOAD ON GUMROAD](https://gumroad.com/your-username/l/portfolio-template)
+### ⬇️ [DOWNLOAD ON GUMROAD](https://gumroad.com/pialmahmud)
 
 **Price:** $29 | Commercial License | Lifetime Updates | Email Support
 
@@ -23,6 +23,12 @@
 - ✅ Backend integration examples
 - ✅ Lifetime access & future updates
 - ✅ Email support
+
+---
+
+## 🌐 Live Demo
+
+**[View Live Project](https://modern-full-stack-portfolio-template.netlify.app/)** - Experience the template in action
 
 ---
 
@@ -86,10 +92,10 @@
 
 - **Free Preview:** Clone this repository
   ```bash
-  git clone https://github.com/pialmahmud/portfolio-template.git
+  git clone https://github.com/mahmudpial/portfolio-template.git
   cd portfolio-template
   ```
-- **Premium Version:** [Download from Gumroad](https://gumroad.com/your-username/l/portfolio-template)
+- **Live Demo:** [View on Netlify](https://modern-full-stack-portfolio-template.netlify.app/)
 
 ### 2. Open in Browser
 
@@ -205,7 +211,7 @@ This project is licensed under **Creative Commons Attribution-NonCommercial-NoDe
 
 ### Need Commercial License?
 
-**🛒 [Purchase Commercial License on Gumroad](https://gumroad.com/your-username/l/portfolio-template) - $29**
+**🛒 [Purchase Commercial License on Gumroad](https://gumroad.com/pialmahmud) - $29**
 
 Commercial license includes:
 
@@ -254,7 +260,7 @@ For full license details, see [LICENSE](LICENSE) file.
 
 ### Premium Support (Gumroad Customers)
 
-- 📧 Email support: pialmahmud@example.com
+- 📧 Email support: mahmudpial4763@gmail.com
 - 🚀 Priority responses (24 hours)
 - 🛠️ Customization help
 - 📚 Extended documentation
@@ -292,7 +298,7 @@ A: No! Works anywhere—GitHub Pages, Netlify, Vercel, or your own server.
 - 🍴 Fork if you want to extend it
 - 📢 Share with fellow developers
 - 💬 Leave feedback in issues
-- 🛒 [Purchase Premium Version](https://gumroad.com/your-username/l/portfolio-template)
+- 🛒 [Purchase Premium Version](https://gumroad.com/pialmahmud)
 
 ---
 
@@ -321,11 +327,10 @@ Found a bug? Have a suggestion?
 
 **Pial Mahmud** - Full Stack Developer & Creative Developer
 
-- 🌐 Website: [pialmahmud.com](https://pialmahmud.com)
-- 🐙 GitHub: [@pialmahmud](https://github.com/pialmahmud)
-- 📧 Email: pialmahmud@example.com
-- 🐦 Twitter: [@pialmahmud](https://twitter.com/pialmahmud)
-- 💼 LinkedIn: [Pial Mahmud](https://linkedin.com/in/pialmahmud)
+- 🌐 Portfolio: [portfolio-and-blog-app-fontend.vercel.app](https://portfolio-and-blog-app-fontend.vercel.app/)
+- 🐙 GitHub: [@mahmudpial](https://github.com/mahmudpial)
+- 📧 Email: mahmudpial4763@gmail.com
+- 💼 LinkedIn: [Pial Mahmud](https://www.linkedin.com/in/pial-mahmud/)
 
 ---
 
@@ -369,8 +374,8 @@ Made with ❤️ by **Pial Mahmud**
 **Pial Mahmud**
 Software Engineer | Dhaka, Bangladesh
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/pialmahmud)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://yourportfolio.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mahmudpial)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://portfolio-and-blog-app-fontend.vercel.app/)
 
 ---
 
