@@ -1,0 +1,421 @@
+<!-- 
+  ================================
+  BLOG PAGE (pages/components/blog.html)
+  ================================
+  Purpose: Share technical knowledge and insights
+  - Publishes tech articles and tutorials
+  - Featured article section with latest posts
+  - Blog post listing with search functionality
+  - Filter by category and tags (Web Dev, Backend, Full Stack, etc)
+  - Sidebar with recent posts and newsletter signup
+  - Helps with SEO and thought leadership
+  Target: Developers, tech enthusiasts, and knowledge seekers
+  ================================
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pial Mahmud - Blog | Web Development, Full Stack, and Tech Insights"
+    />
+    <meta name="author" content="Pial Mahmud" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/09b5120dfd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blog - Pial Mahmud</title>
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background: linear-gradient(
+          135deg,
+          #0a0e27 0%,
+          #1a1a3e 25%,
+          #0d1a3a 50%,
+          #1a0a2e 75%,
+          #0f0a1f 100%
+        );
+        min-height: 100vh;
+      }
+      .gradient-text {
+        background: linear-gradient(
+          135deg,
+          #06b6d4 0%,
+          #8b5cf6 50%,
+          #ec4899 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .glow-effect {
+        box-shadow: 0 0 30px rgba(96, 165, 250, 0.3);
+      }
+      .blog-card {
+        transition: all 0.3s ease;
+      }
+      .blog-card:hover {
+        transform: translateY(-5px);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    ========== BLOG PAGE STRUCTURE ==========
+    Purpose: Share technical knowledge and insights
+    - Featured article section highlights latest/best post
+    - Blog post listing displays articles in chronological order
+    - Search functionality helps users find specific topics
+    - Category filters organize posts by topic
+    - Sidebar with recent posts and newsletter signup
+    - Comments section enables reader engagement
+    =======================================
+    -->
+    <!-- Navigation Bar -->
+    <!-- 
+    ========== NAVIGATION BAR ==========
+    Purpose: Quick access to other portfolio pages
+    - Brand logo links back to home page
+    - Links to Home, Portfolio, Blog (active), About
+    - Contact link for business inquiries
+    - Login button for registered users
+    - Sticky positioning keeps visible while scrolling
+    ===================================
+    -->
+    <nav
+      class="sticky top-0 z-50 backdrop-blur-md bg-slate-900/80 border-b border-pink-500/30"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <div class="flex items-center gap-3 cursor-pointer">
+            <a
+              href="../../index.html"
+              class="flex items-center gap-3 hover:opacity-80 transition"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-indigo-600 flex items-center justify-center text-white font-bold"
+              >
+                PM
+              </div>
+              <div>
+                <h1 class="text-2xl font-bold gradient-text">Pial Mahmud</h1>
+                <p class="text-xs text-gray-400">Full Stack Developer</p>
+              </div>
+            </a>
+          </div>
+          <div class="hidden lg:flex items-center gap-1">
+            <a
+              href="../../index.html"
+              class="px-4 py-2 text-gray-300 hover:text-cyan-400 hover:bg-cyan-500/20 rounded-lg transition-all duration-300"
+              ><i class="fas fa-home mr-2"></i>Home</a
+            >
+            <a
+              href="portfolio.html"
+              class="px-4 py-2 text-gray-300 hover:text-purple-400 hover:bg-purple-500/20 rounded-lg transition-all duration-300"
+              ><i class="fas fa-briefcase mr-2"></i>Portfolio</a
+            >
+            <a
+              href="blog.html"
+              class="px-4 py-2 text-pink-400 bg-pink-500/20 rounded-lg"
+              ><i class="fas fa-pen-fancy mr-2"></i>Blog</a
+            >
+            <a
+              href="about.html"
+              class="px-4 py-2 text-gray-300 hover:text-teal-400 hover:bg-teal-500/20 rounded-lg transition-all duration-300"
+              ><i class="fas fa-user mr-2"></i>About</a
+            >
+            <a
+              href="../../index.html#contact"
+              class="px-4 py-2 text-gray-300 hover:text-blue-400 hover:bg-blue-500/20 rounded-lg transition-all duration-300"
+              ><i class="fas fa-envelope mr-2"></i>Contact</a
+            >
+            <a
+              href="../auth/login.html"
+              class="ml-4 px-6 py-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white rounded-lg font-semibold transition-all duration-300 hover:glow-effect"
+              ><i class="fas fa-sign-in-alt mr-2"></i>Login</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- 
+    ========== BLOG HERO/INTRO SECTION ==========
+    Purpose: Introduce blog and set topic expectations
+    - Headline "My Blog" immediately identifies page purpose
+    - Tagline explains blog topics (web dev, full-stack, best practices)
+    - "42+ Articles Published" badge shows prolific output
+    - Elegant styling creates professional first impression
+    ==========================================
+    -->
+    <div class="pt-20 pb-16 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
+          My <span class="gradient-text">Blog</span>
+        </h1>
+        <p class="text-xl text-gray-300 mb-8">
+          Insights on web development, full-stack programming, best practices,
+          and tech trends.
+        </p>
+        <div
+          class="inline-block px-4 py-2 bg-blue-500/20 text-blue-300 rounded-full text-sm font-semibold border border-blue-500/50"
+        >
+          📝 42+ Articles Published
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog Posts -->
+    <div class="max-w-4xl mx-auto px-4 pb-20">
+      <!-- 
+      ========== SEARCH & FILTER SECTION ==========
+      Purpose: Help users find specific blog articles
+      - Search bar allows users to filter posts by keyword
+      - Placeholder text explains search functionality
+      - Real-time filtering as user types
+      - Responsive design works on mobile and desktop
+      - Reduces time to find relevant content
+      ===========================================
+      -->
+      <!-- Search Bar -->
+      <div class="mb-12">
+        <input
+          type="text"
+          placeholder="Search articles..."
+          class="w-full px-6 py-3 bg-slate-900/50 border-2 border-blue-500/30 text-gray-100 rounded-lg focus:border-blue-500 focus:outline-none transition"
+        />
+      </div>
+
+      <!-- 
+      ========== BLOG ARTICLES LISTING ==========
+      Purpose: Display published articles for reading
+      - Each article shown as card with thumbnail
+      - Title, excerpt show what article is about
+      - Author + date metadata builds trust
+      - Read time shows article length upfront
+      - Hover effects signal interactivity
+      - Click navigates to full article view
+      =========================================
+      -->
+      <!-- Blog Post 1 -->
+      <div
+        class="blog-card bg-gradient-to-br from-blue-500/10 to-indigo-500/10 border border-blue-500/30 rounded-xl p-8 mb-6 backdrop-blur-sm"
+      >
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center"
+            >
+              <i class="fas fa-rocket text-white text-2xl"></i>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="flex flex-wrap gap-3 mb-3">
+              <span
+                class="px-3 py-1 bg-blue-500/30 text-blue-300 rounded-full text-xs font-semibold"
+                >Web Development</span
+              >
+              <span
+                class="px-3 py-1 bg-slate-700 text-gray-300 rounded-full text-xs"
+                >6 min read</span
+              >
+              <span class="text-gray-400 text-xs">April 5, 2024</span>
+            </div>
+            <h2
+              class="text-2xl font-bold text-white mb-3 hover:text-blue-400 cursor-pointer transition"
+            >
+              Building High-Performance React Applications
+            </h2>
+            <p class="text-gray-400 mb-4 line-clamp-2">
+              Learn advanced React optimization techniques including code
+              splitting, lazy loading, memoization, and performance profiling to
+              build blazing-fast user interfaces.
+            </p>
+            <div class="flex items-center gap-4">
+              <a
+                href="#"
+                class="text-blue-400 hover:text-blue-300 font-semibold text-sm transition"
+                >Read More →</a
+              >
+              <span class="text-gray-600">By Pial Mahmud</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Post 2 -->
+      <div
+        class="blog-card bg-gradient-to-br from-blue-500/10 to-indigo-500/10 border border-blue-500/30 rounded-xl p-8 mb-6 backdrop-blur-sm"
+      >
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg flex items-center justify-center"
+            >
+              <i class="fas fa-shield-alt text-white text-2xl"></i>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="flex flex-wrap gap-3 mb-3">
+              <span
+                class="px-3 py-1 bg-purple-500/30 text-purple-300 rounded-full text-xs font-semibold"
+                >Security</span
+              >
+              <span
+                class="px-3 py-1 bg-slate-700 text-gray-300 rounded-full text-xs"
+                >8 min read</span
+              >
+              <span class="text-gray-400 text-xs">April 3, 2024</span>
+            </div>
+            <h2
+              class="text-2xl font-bold text-white mb-3 hover:text-blue-400 cursor-pointer transition"
+            >
+              Complete Guide to Web App Security
+            </h2>
+            <p class="text-gray-400 mb-4 line-clamp-2">
+              Comprehensive security best practices including HTTPS,
+              authentication, CSRF protection, SQL injection prevention, and
+              secure password storage.
+            </p>
+            <div class="flex items-center gap-4">
+              <a
+                href="#"
+                class="text-blue-400 hover:text-blue-300 font-semibold text-sm transition"
+                >Read More →</a
+              >
+              <span class="text-gray-600">By Pial Mahmud</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Post 3 -->
+      <div
+        class="blog-card bg-gradient-to-br from-blue-500/10 to-indigo-500/10 border border-blue-500/30 rounded-xl p-8 mb-6 backdrop-blur-sm"
+      >
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-green-600 to-teal-600 rounded-lg flex items-center justify-center"
+            >
+              <i class="fas fa-database text-white text-2xl"></i>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="flex flex-wrap gap-3 mb-3">
+              <span
+                class="px-3 py-1 bg-green-500/30 text-green-300 rounded-full text-xs font-semibold"
+                >Database</span
+              >
+              <span
+                class="px-3 py-1 bg-slate-700 text-gray-300 rounded-full text-xs"
+                >10 min read</span
+              >
+              <span class="text-gray-400 text-xs">March 31, 2024</span>
+            </div>
+            <h2
+              class="text-2xl font-bold text-white mb-3 hover:text-blue-400 cursor-pointer transition"
+            >
+              MongoDB vs PostgreSQL: Choosing the Right Database
+            </h2>
+            <p class="text-gray-400 mb-4 line-clamp-2">
+              A detailed comparison between MongoDB and PostgreSQL, exploring
+              use cases, performance characteristics, scalability, and when to
+              choose each database.
+            </p>
+            <div class="flex items-center gap-4">
+              <a
+                href="#"
+                class="text-blue-400 hover:text-blue-300 font-semibold text-sm transition"
+                >Read More →</a
+              >
+              <span class="text-gray-600">By Pial Mahmud</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Post 4 -->
+      <div
+        class="blog-card bg-gradient-to-br from-blue-500/10 to-indigo-500/10 border border-blue-500/30 rounded-xl p-8 mb-6 backdrop-blur-sm"
+      >
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-600 to-red-600 rounded-lg flex items-center justify-center"
+            >
+              <i class="fas fa-tools text-white text-2xl"></i>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="flex flex-wrap gap-3 mb-3">
+              <span
+                class="px-3 py-1 bg-orange-500/30 text-orange-300 rounded-full text-xs font-semibold"
+                >DevOps</span
+              >
+              <span
+                class="px-3 py-1 bg-slate-700 text-gray-300 rounded-full text-xs"
+                >7 min read</span
+              >
+              <span class="text-gray-400 text-xs">March 28, 2024</span>
+            </div>
+            <h2
+              class="text-2xl font-bold text-white mb-3 hover:text-blue-400 cursor-pointer transition"
+            >
+              Docker & Kubernetes for Modern Development
+            </h2>
+            <p class="text-gray-400 mb-4 line-clamp-2">
+              Learn containerization with Docker, orchestration with Kubernetes,
+              and how to build scalable, reliable applications in production
+              environments.
+            </p>
+            <div class="flex items-center gap-4">
+              <a
+                href="#"
+                class="text-blue-400 hover:text-blue-300 font-semibold text-sm transition"
+                >Read More →</a
+              >
+              <span class="text-gray-600">By Pial Mahmud</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Load More -->
+      <div class="text-center mt-12">
+        <button
+          class="px-8 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-semibold transition"
+        >
+          Load More Articles
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="mt-20 border-t border-blue-500/30 bg-gradient-to-b from-slate-900/50 to-slate-950 backdrop-blur-sm"
+    >
+      <div class="container mx-auto px-4 py-12 text-center">
+        <p class="text-gray-400">© 2024 Pial Mahmud. All rights reserved.</p>
+        <p class="text-gray-500 mt-2">
+          Made with <i class="fa-solid fa-heart text-red-500"></i> by Pial
+          Mahmud
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

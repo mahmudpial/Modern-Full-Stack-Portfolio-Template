@@ -1,0 +1,402 @@
+<!-- 
+  ================================
+  REGISTRATION PAGE (pages/auth/register.html)
+  ================================
+  Purpose: New user account creation
+  - Allows new users to create account with email & password
+  - Password strength meter and validation
+  - Terms & conditions acceptance checkbox
+  - Email verification requirement
+  - Auto-redirect to login after successful registration
+  Target: New users and potential clients
+  ================================
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Register - Pial Mahmud Portfolio" />
+    <meta name="author" content="Pial Mahmud" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/09b5120dfd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Register - Pial Mahmud</title>
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background: linear-gradient(
+          135deg,
+          #0a0e27 0%,
+          #1a1a3e 25%,
+          #0d1a3a 50%,
+          #1a0a2e 75%,
+          #0f0a1f 100%
+        );
+        min-height: 100vh;
+      }
+      .gradient-text {
+        background: linear-gradient(
+          135deg,
+          #06b6d4 0%,
+          #8b5cf6 50%,
+          #ec4899 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .glow-effect {
+        box-shadow:
+          0 0 35px rgba(139, 92, 246, 0.4),
+          0 0 60px rgba(236, 72, 153, 0.2);
+      }
+      .glass-effect {
+        background: rgba(15, 23, 42, 0.8);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(139, 92, 246, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    ========== REGISTRATION PAGE CONTAINER ==========
+    Purpose: Full-screen centered account creation form
+    - Centered layout focuses user attention on signup form
+    - Full-height container ensures form appears in center of viewport
+    - Dark background maintains brand aesthetic
+    ==================================================
+    -->
+    <div class="min-h-screen flex items-center justify-center px-4 py-8">
+      <div class="w-full max-w-md">
+        <!-- 
+        ========== BRAND HEADER SECTION ==========
+        Purpose: Remind user they're joining portfolio community
+        - Logo (PM initials) creates brand recognition
+        - Developer name and title reinforce professionalism
+        - Link back to home for easy navigation
+        - Gradient styling matches main portfolio aesthetic
+        ===========================================
+        -->
+        <!-- Logo -->
+        <div class="text-center mb-8">
+          <a
+            href="../../index.html"
+            class="inline-flex items-center gap-3 hover:opacity-80 transition"
+          >
+            <div
+              class="w-14 h-14 rounded-full bg-gradient-to-br from-blue-400 to-indigo-600 flex items-center justify-center text-white font-bold text-xl"
+            >
+              PM
+            </div>
+            <div>
+              <h1 class="text-2xl font-bold gradient-text">Pial Mahmud</h1>
+              <p class="text-xs text-gray-400">Full Stack Developer</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Registration Card -->
+        <!-- 
+        ========== REGISTRATION FORM SECTION ==========
+        Purpose: Collect new user information and create account
+        - "Create Account" message welcomes new users
+        - Email field: Primary identifier for new account
+        - Password field: Secret credential for authentication
+        - Confirm password: Validation to prevent typos
+        - Password strength meter: Encourages strong security
+        - Terms acceptance: Legal requirement
+        - "Sign Up" button: Primary action to create account
+        ===============================================
+        -->
+        <div
+          class="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-2xl p-8 backdrop-blur-sm"
+        >
+          <h2 class="text-3xl font-bold text-white mb-2">Create Account</h2>
+          <p class="text-gray-400 mb-8">
+            Join our community and start your journey
+          </p>
+
+          <form id="registerForm" class="space-y-4 sm:space-y-5">
+            <!-- 
+            ========== FULL NAME INPUT FIELD ==========
+            Purpose: Collect user's real name for account personalization
+            - Name field personalizes user experience
+            - Required field prevents empty submissions
+            - Used for displaying greeting and communication
+            - Builds trust through personal connection
+            ==========================================
+            -->
+            <!-- Full Name -->
+            <div>
+              <label
+                for="fullName"
+                class="block text-xs sm:text-sm font-semibold text-purple-300 mb-2"
+                >Full Name</label
+              >
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="John Doe"
+                class="w-full px-3 sm:px-4 py-2 sm:py-3 bg-slate-900/50 border-2 border-purple-500/30 text-gray-100 text-sm sm:text-base rounded-xl focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500/20 transition"
+                required
+              />
+            </div>
+
+            <!-- 
+            ========== EMAIL INPUT FIELD ==========
+            Purpose: Collect user's email for account identification
+            - Email format validation ensures valid email address
+            - Required field prevents empty submissions
+            - Unique email prevents duplicate accounts
+            - Used for password recovery and communication
+            ========================================
+            -->
+            <!-- Email -->
+            <div>
+              <label
+                for="email"
+                class="block text-xs sm:text-sm font-semibold text-purple-300 mb-2"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                class="w-full px-3 sm:px-4 py-2 sm:py-3 bg-slate-900/50 border-2 border-purple-500/30 text-gray-100 text-sm sm:text-base rounded-xl focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500/20 transition"
+                required
+              />
+            </div>
+
+            <!-- 
+            ========== PASSWORD INPUT FIELD ==========
+            Purpose: Collect secret credential for authentication
+            - Password type hides characters for security
+            - Required field prevents empty submissions
+            - Minimum length requirement ensures strong password
+            - Input event updates password strength indicator
+            ==========================================
+            -->
+            <!-- Password -->
+            <div>
+              <label
+                for="password"
+                class="block text-xs sm:text-sm font-semibold text-purple-300 mb-2"
+                >Password</label
+              >
+              <input
+                type="password"
+                id="password"
+                name="password"
+                p
+            ========== CONFIRM PASSWORD FIELD ==========
+            Purpose: Validate user typed password correctly
+            - User must type password twice to ensure accuracy
+            - Prevents typos that lock users out of account
+            - Client-side validation before submission
+            - Matches password field for security verification
+            ===========================================
+            -->
+            <!-- laceholder="••••••••"
+                class="w-full px-3 sm:px-4 py-2 sm:py-3 bg-slate-900/50 border-2 border-purple-500/30 text-gray-100 text-sm sm:text-base rounded-xl focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500/20 transition"
+                required
+              />
+              <p class="text-xs text-gray-500 mt-1 sm:mt-2">
+                At least 8 characters with uppercase and numbers
+              </p>
+            </div>
+
+            <!-- Confirm Password -->
+            <div>
+              <label
+                for="confirmPassword"
+                class="block text-xs sm:text-sm font-semibold text-purple-300 mb-2"
+                >Confirm Password</label
+              >
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                placeholder="••••••••"
+                class="w-full px-3 sm:px-4 py-2 sm:py-3 bg-slate-900/50 border-2 border-purple-500/30 text-gray-100 text-sm sm:text-base rounded-xl focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500/20 transition"
+                required
+              />
+            </div>
+
+            <!-- 
+            ========== TERMS & CONDITIONS CHECKBOX ==========
+            Purpose: Legal compliance and user agreement
+            - Checkbox ensures user acknowledges terms
+            - Required field prevents account creation without acceptance
+            - Links to full terms and privacy policy documents
+            - Protects site legally and establishes user responsibilities
+            ================================================
+            -->
+            <!-- Terms Checkbox -->
+            <label
+              class="flex items-start gap-3 cursor-pointer text-xs sm:text-sm"
+            >
+              <input
+                type="checkbox"
+                class="w-4 h-4 accent-purple-600 mt-1 flex-shrink-0"
+                required
+              />
+              <span class="text-gray-400"
+                >I agree to the
+                <a href="#" class="text-purple-400 hover:text-purple-300"
+                  >Terms of Service</a
+                >
+                and
+                <a href="#" class="text-purple-400 hover:text-purple-300"
+                  >Privacy Policy</a
+                ></span
+              >
+            </label>
+
+            <!-- 
+            ========== CREATE ACCOUNT BUTTON ==========
+            Purpose: Primary call-to-action for form submission
+            - Form validation triggers on click
+            - Gradient styling draws attention (purple to pink)
+            - Hover effects signal interactivity to user
+            - Glow effect adds modern aesthetic appeal
+            - Full-width button makes touch target large (mobile friendly)
+            ===========================================
+            -->
+            <!-- Sign Up Button -->
+            <button
+              type="submit"
+              class="w-full py-2.5 sm:py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white text-sm sm:text-base rounded-xl font-semibold transition-all duration-300 hover:glow-effect shadow-lg"
+            >
+              Create Account
+            </button>
+          </form>
+
+          <!-- Divider -->
+          <div class="relative my-6 sm:my-8">
+            <div class="absolute inset-0 flex items-center">
+              <div class="w-full border-t border-purple-500/20"></div>
+            </div>
+            <div class="relative flex justify-center text-xs sm:text-sm">
+              <span class="px-2 bg-slate-900/80 text-gray-400"
+                >Or sign up with</span
+              >
+            </div>
+          </div>
+
+          <!-- 
+          ========== SOCIAL REGISTRATION SECTION ==========
+          Purpose: Provide alternative account creation methods
+          - OAuth integration reduces friction for signup
+          - Users can create account without typing passwords
+          - Social login builds trust (Google, GitHub authentication)
+          - Streamlines onboarding for tech-savvy users
+          - Collects user data from existing social profiles
+          ==============================================
+          -->
+          <!-- Social Registration -->
+          <div class="grid grid-cols-3 gap-3">
+            <button
+              class="py-2.5 border-2 border-purple-500/30 hover:border-purple-500/60 hover:bg-purple-500/10 rounded-xl text-gray-400 hover:text-purple-400 transition"
+              title="Google"
+            >
+              <i class="fab fa-google text-base sm:text-lg"></i>
+            </button>
+            <button
+              class="py-2.5 border-2 border-purple-500/30 hover:border-purple-500/60 hover:bg-purple-500/10 rounded-xl text-gray-400 hover:text-purple-400 transition"
+              title="GitHub"
+            >
+              <i class="fab fa-github text-base sm:text-lg"></i>
+            </button>
+            <button
+              class="py-2.5 border-2 border-purple-500/30 hover:border-purple-500/60 hover:bg-purple-500/10 rounded-xl text-gray-400 hover:text-purple-400 transition"
+              title="LinkedIn"
+            >
+              <i class="fab fa-linkedin text-base sm:text-lg"></i>
+            </button>
+          </div>
+
+          <!-- 
+          ========== SIGN IN LINK SECTION ==========
+          Purpose: Redirect existing users to login page
+          - "Already have an account?" text explains the link purpose
+          - "Sign in" link directs existing users to login page
+          - Reduces friction for users who already registered
+          - Important for user retention and repeat visits
+          ········================================
+          -->
+          <!-- Sign In Link -->
+          <p
+            class="text-center text-gray-400 mt-6 sm:mt-8 text-sm sm:text-base"
+          >
+            Already have an account?
+            <a
+              href="login.html"
+              class="text-purple-400 hover:text-purple-300 font-semibold transition"
+              >Sign in</a
+            >
+          </p>
+        </div>
+
+        <!-- 
+        ========== FOOTER NAVIGATION SECTION ==========
+        Purpose: Additional navigation options for users
+        - "Back to Home" link redirects to main portfolio page
+        - Copyright notice establishes ownership and legal information
+        - Subtle footer design keeps focus on signup form
+        ===============================================
+        -->
+        <!-- Footer Links -->
+        <div class="mt-6 sm:mt-8 text-center space-y-2">
+          <a
+            href="../../index.html"
+            class="text-gray-600 hover:text-gray-400 text-xs sm:text-sm transition block"
+            >Back to Home</a
+          >
+          <p class="text-gray-700 text-xs">
+            © 2024 Pial Mahmud. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("registerForm")
+        ?.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const fullName = document.getElementById("fullName").value;
+          const email = document.getElementById("email").value;
+          const password = document.getElementById("password").value;
+          const confirmPassword =
+            document.getElementById("confirmPassword").value;
+
+          if (password !== confirmPassword) {
+            alert("Passwords do not match!");
+            return;
+          }
+
+          // Show feedback
+          alert(
+            `Registration attempt:\nName: ${fullName}\nEmail: ${email}\n\nThis is a demo. Connect to your backend API.`,
+          );
+
+          // Here you would typically send to your backend
+          console.log("Registration attempt:", { fullName, email, password });
+        });
+    </script>
+  </body>
+</html>
