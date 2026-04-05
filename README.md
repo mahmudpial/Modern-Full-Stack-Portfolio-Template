@@ -70,30 +70,54 @@
 ```plaintext
 ├── assets/
 │   ├── css/
-│   │   └── style.css              # Professional responsive styles
+│   │   └── style.css                    # Professional responsive styles
 │   ├── js/
-│   │   └── script.js              # Interactive features & form handling
+│   │   └── script.js                    # Interactive features & form handling
 │   └── img/
-│       ├── icons/                 # UI icons
-│       ├── technology/            # Tech stack logos
-│       └── terminal/              # Demo images
-├── index.html                      # Main entry point
-├── README.md                       # Documentation
-├── LICENSE                         # CC BY-NC-ND 4.0
-├── GUMROAD_GITHUB_STRATEGY.md     # Sales & Distribution Guide
-└── .gitignore                      # Git configuration
+│       ├── icons/                       # UI icons
+│       ├── technology/                  # Tech stack logos
+│       └── terminal/                    # Demo images
+├── index.html                           # Main portfolio entry point
+├── README.md                            # Master documentation (you are here)
+├── LICENSE                              # CC BY-NC-ND 4.0 License
+├── GUMROAD_GITHUB_STRATEGY.md          # Sales & distribution strategy
+├── GUMROAD_PRODUCT_DESCRIPTION.md      # Gumroad product copy
+├── GUMROAD_SHORT_SUMMARY.md            # Quick Gumroad summaries
+├── PRODUCT_INFO_SUMMARY.md             # Complete product overview
+├── 15_MINUTE_LAUNCH.md                 # Quick launch checklist
+├── GITHUB_GUMROAD_QUICK_START.md       # GitHub + Gumroad setup guide
+├── LAUNCH_CHECKLIST.md                 # Pre-launch verification
+├── STRATEGY_EXPLAINED.md               # Business strategy document
+└── .gitignore                          # Git configuration
 ```
 
 ---
 
-## 🚀 Quick Start (5 Minutes)
+## � Documentation Guide
+
+**For different purposes, read these files:**
+
+| Document                                                         | Purpose                                                |
+| ---------------------------------------------------------------- | ------------------------------------------------------ |
+| **README.md** (you are here)                                     | Overview & quick start                                 |
+| [PRODUCT_INFO_SUMMARY.md](PRODUCT_INFO_SUMMARY.md)               | Complete product details, positioning, market analysis |
+| [GUMROAD_PRODUCT_DESCRIPTION.md](GUMROAD_PRODUCT_DESCRIPTION.md) | Full product copy for Gumroad sales page               |
+| [GUMROAD_SHORT_SUMMARY.md](GUMROAD_SHORT_SUMMARY.md)             | 5 short version options for marketing                  |
+| [15_MINUTE_LAUNCH.md](15_MINUTE_LAUNCH.md)                       | Step-by-step setup for GitHub & Gumroad                |
+| [GITHUB_GUMROAD_QUICK_START.md](GITHUB_GUMROAD_QUICK_START.md)   | Quick guide for GitHub + Gumroad workflow              |
+| [GUMROAD_GITHUB_STRATEGY.md](GUMROAD_GITHUB_STRATEGY.md)         | Business strategy & distribution plan                  |
+| [LAUNCH_CHECKLIST.md](LAUNCH_CHECKLIST.md)                       | Pre-launch verification checklist                      |
+
+---
+
+## �🚀 Quick Start (5 Minutes)
 
 ### 1. Download
 
 - **Free Preview:** Clone this repository
   ```bash
-  git clone https://github.com/mahmudpial/portfolio-template.git
-  cd portfolio-template
+  git clone https://github.com/mahmudpial/Modern-Full-Stack-Portfolio-Template.git
+  cd Modern-Full-Stack-Portfolio-Template
   ```
 - **Live Demo:** [View on Netlify](https://modern-full-stack-portfolio-template.netlify.app/)
 
@@ -316,7 +340,7 @@ A: No! Works anywhere—GitHub Pages, Netlify, Vercel, or your own server.
 
 Found a bug? Have a suggestion?
 
-1. Check existing [issues](https://github.com/pialmahmud/portfolio-template/issues)
+1. Check existing [issues](https://github.com/pialmahmud/Modern-Full-Stack-Portfolio-Template/issues)
 2. Create a new issue with details
 3. For bugs: include browser, steps to reproduce
 4. For features: explain use case
@@ -349,10 +373,25 @@ Found a bug? Have a suggestion?
 
 ## 📄 Additional Resources
 
-- [Gumroad + GitHub Strategy Guide](GUMROAD_GITHUB_STRATEGY.md)
+**Product & Marketing Docs:**
+
+- [Product Info Summary](PRODUCT_INFO_SUMMARY.md) - Market analysis, positioning, customer personas
+- [Gumroad Product Description](GUMROAD_PRODUCT_DESCRIPTION.md) - Full sales copy
+- [Gumroad Short Summaries](GUMROAD_SHORT_SUMMARY.md) - 5 copy versions (pick your favorite)
+
+**Launch & Setup Guides:**
+
+- [15 Minute Launch](15_MINUTE_LAUNCH.md) - Complete GitHub & Gumroad setup
+- [GitHub + Gumroad Quick Start](GITHUB_GUMROAD_QUICK_START.md) - Fast workflow
+- [Launch Checklist](LAUNCH_CHECKLIST.md) - Before going live
+- [Strategy Explained](STRATEGY_EXPLAINED.md) - Business strategy details
+
+**External Resources:**
+
 - [Full License](LICENSE)
 - [Web Accessibility Guidelines](https://www.w3.org/WAI/)
 - [SEO Best Practices](https://developers.google.com/search)
+- [Gumroad Platform](https://gumroad.com)
 
 ---
 
