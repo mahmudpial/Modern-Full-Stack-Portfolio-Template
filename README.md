@@ -7,25 +7,6 @@
 
 ---
 
-## 🎁 GET THE PREMIUM VERSION
-
-### ⬇️ [DOWNLOAD ON GUMROAD](https://gumroad.com/pialmahmud)
-
-**Price:** $29 | Commercial License | Lifetime Updates | Email Support
-
-### What's Included:
-
-- ✅ Complete portfolio template (HTML/CSS/JS)
-- ✅ Commercial license for unlimited projects
-- ✅ Premium documentation + setup guide
-- ✅ Mobile-first responsive design
-- ✅ SEO optimization guide
-- ✅ Backend integration examples
-- ✅ Lifetime access & future updates
-- ✅ Email support
-
----
-
 ## 🌐 Live Demo
 
 **[View Live Project](https://modern-full-stack-portfolio-template.netlify.app/)** - Experience the template in action
@@ -47,23 +28,6 @@
 
 ---
 
-## 📊 Feature Comparison
-
-| Feature                 | Free Preview |  Premium Version  |
-| ----------------------- | :----------: | :---------------: |
-| Base Portfolio Template |      ✅      |        ✅         |
-| Responsive Design       |      ✅      |        ✅         |
-| Source Code             |      ✅      |        ✅         |
-| Documentation           |   ⚠️ Basic   |      ✅ Full      |
-| Backend Setup Guide     |      ❌      | ✅ Comprehensive  |
-| Multiple Color Schemes  |      ❌      |  ✅ 5+ Included   |
-| Component Library       |      ❌      | ✅ 15+ Components |
-| Email Support           |      ❌      |    ✅ Priority    |
-| Commercial License      |      ❌      |   ✅ Unlimited    |
-| Lifetime Updates        |      ❌      |    ✅ Included    |
-| **Cost**                |   **FREE**   |      **$20**      |
-
----
 
 ## 📂 Project Structure
 
@@ -181,7 +145,7 @@ Or download ZIP from GitHub and extract.
 
 ```bash
 # Using VS Code Live Server
-# Right-click index.html → "Open with Live Server"
+# Right-click index.html → "Open with Live Server."
 
 # Or open directly
 open index.html
@@ -192,9 +156,9 @@ open index.html
 Edit `index.html` and pages to add your information:
 
 - Update hero section with your name
-- Add your projects in portfolio section
-- Update contact form with your email service
-- Customize colors in `assets/css/style.css`
+- Add your projects in the portfolio section
+- Update the contact form with your email service
+- Customize colors in `assets/css/style.css.`
 
 ### 4. Deploy
 
@@ -334,26 +298,6 @@ form.addEventListener("submit", async (e) => {
 - ❌ Use for client projects
 - ❌ Modify and resell
 
-### Commercial License Available
-
-**🛒 [Purchase - $29](https://gumroad.com/pialmahmud)**
-
-**Includes:**
-
-- ✅ Unlimited commercial projects
-- ✅ Client work permission
-- ✅ No attribution required
-- ✅ Modification rights
-- ✅ Lifetime updates
-- ✅ Email support
-
-**License Information:**
-
-- **License Key:** 6F0E4C97-B72A4E69-A11BF6C4-AF6517E7 (Sample)
-- **Product ID:** m9mSIY7fWcLU9O541YX9fg==
-
-See [LICENSE](LICENSE) file for full details.
-
 ---
 
 ## 🎯 Use Cases
@@ -370,21 +314,12 @@ See [LICENSE](LICENSE) file for full details.
 
 ---
 
-## 🆘 Support & Help
-
 ### Documentation
 
 - 📖 [SETUP.md](SETUP.md) - Quick 15-minute setup guide
 - 📂 [pages/README.md](pages/README.md) - Detailed page documentation
 - 📋 [LICENSE](LICENSE) - License information
 
-### Getting Help
-
-- 🐙 [GitHub Issues](https://github.com/mahmudpial/Modern-Full-Stack-Portfolio-Template/issues) - Report bugs
-- 📧 Email: pialmahmud@example.com
-- 🛒 [Gumroad Support](https://gumroad.com/pialmahmud) - Premium support
-
----
 
 ## 🤝 Contributing
 
@@ -394,15 +329,6 @@ Found a bug? Have a suggestion?
 2. Create a new issue with details
 3. For bugs: include browser and steps to reproduce
 4. For features: explain use case
-
----
-
-## 📚 Resources & Links
-
-- **Live Demo:** [Netlify](https://modern-full-stack-portfolio-template.netlify.app/)
-- **GitHub Repo:** [mahmudpial/Modern-Full-Stack-Portfolio-Template](https://github.com/mahmudpial/Modern-Full-Stack-Portfolio-Template)
-- **Gumroad:** [Buy Commercial License](https://gumroad.com/pialmahmud)
-- **Creator:** [Pial Mahmud](https://github.com/mahmudpial)
 
 ---
 
@@ -438,7 +364,6 @@ Full Stack Developer from Dhaka, Bangladesh
   <a href="LICENSE">License</a> • 
   <a href="SETUP.md">Quick Start</a> • 
   <a href="pages/README.md">Pages Docs</a> • 
-  <a href="https://gumroad.com/pialmahmud">Buy Commercial</a>
 </p>
 
 ---
@@ -447,6 +372,4 @@ Full Stack Developer from Dhaka, Bangladesh
 
 - **Getting Started?** → Read [SETUP.md](SETUP.md)
 - **Understanding Structure?** → Read [pages/README.md](pages/README.md)
-- **Purchase Commercial?** → [Gumroad](https://gumroad.com/pialmahmud)
 - **Report an Issue?** → [GitHub Issues](https://github.com/mahmudpial/Modern-Full-Stack-Portfolio-Template/issues)
-- **Need Support?** → Email: pialmahmud@example.com
