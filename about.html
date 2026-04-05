@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Pial Mahmud - Full Stack Developer | My Story, Skills, and Experience" />
+  <meta name="author" content="Pial Mahmud" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/09b5120dfd.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>About - Pial Mahmud</title>
+  <style>
+    * { font-family: 'Poppins', sans-serif; }
+    body { background: linear-gradient(135deg, #0f172a 0%, #1a1a2e 50%, #16213e 100%); min-height: 100vh; }
+    .gradient-text { background: linear-gradient(135deg, #60a5fa 0%, #818cf8 50%, #a78bfa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .glow-effect { box-shadow: 0 0 30px rgba(96, 165, 250, 0.3); }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="sticky top-0 z-50 backdrop-blur-md bg-slate-900/80 border-b border-blue-500/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex items-center gap-3 cursor-pointer">
+          <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-indigo-600 flex items-center justify-center text-white font-bold">PM</div>
+            <div>
+              <h1 class="text-2xl font-bold gradient-text">Pial Mahmud</h1>
+              <p class="text-xs text-gray-400">Full Stack Developer</p>
+            </div>
+          </a>
+        </div>
+        <div class="hidden lg:flex items-center gap-1">
+          <a href="index.html" class="px-4 py-2 text-gray-300 hover:text-blue-400 hover:bg-blue-500/20 rounded-lg transition-all duration-300"><i class="fas fa-home mr-2"></i>Home</a>
+          <a href="portfolio.html" class="px-4 py-2 text-gray-300 hover:text-blue-400 hover:bg-blue-500/20 rounded-lg transition-all duration-300"><i class="fas fa-briefcase mr-2"></i>Portfolio</a>
+          <a href="blog.html" class="px-4 py-2 text-gray-300 hover:text-blue-400 hover:bg-blue-500/20 rounded-lg transition-all duration-300"><i class="fas fa-pen-fancy mr-2"></i>Blog</a>
+          <a href="about.html" class="px-4 py-2 text-blue-400 bg-blue-500/20 rounded-lg"><i class="fas fa-user mr-2"></i>About</a>
+          <a href="index.html#contact" class="px-4 py-2 text-gray-300 hover:text-blue-400 hover:bg-blue-500/20 rounded-lg transition-all duration-300"><i class="fas fa-envelope mr-2"></i>Contact</a>
+          <a href="login.html" class="ml-4 px-6 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white rounded-lg font-semibold transition-all duration-300 hover:glow-effect"><i class="fas fa-sign-in-alt mr-2"></i>Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="pt-20 pb-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1">
+          <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">About <span class="gradient-text">Me</span></h1>
+          <p class="text-xl text-gray-300 mb-6 leading-relaxed">
+            I'm Pial Mahmud, a passionate Full Stack Developer based in Dhaka, Bangladesh. With 5+ years of experience in web development, I specialize in building scalable, high-performance applications using modern technologies.
+          </p>
+          <p class="text-lg text-gray-400 mb-8 leading-relaxed">
+            My journey started with a curiosity about how websites work, and it has evolved into a profession where I solve complex technical challenges and create beautiful, functional digital experiences for users worldwide.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="index.html#contact" class="px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white rounded-lg font-semibold transition-all duration-300 hover:glow-effect">
+              Let's Work Together
+            </a>
+            <a href="portfolio.html" class="px-8 py-3 border-2 border-blue-500 text-blue-400 hover:bg-blue-500/20 rounded-lg font-semibold transition-all duration-300">
+              View My Work
+            </a>
+          </div>
+        </div>
+        <div class="flex-1">
+          <div class="w-full h-96 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-xl p-1">
+            <div class="w-full h-full bg-gradient-to-br from-blue-500/20 to-indigo-500/20 rounded-lg flex items-center justify-center">
+              <i class="fas fa-user-circle text-white text-8xl opacity-30"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="max-w-7xl mx-auto px-4 py-20">
+    <h2 class="text-4xl font-bold text-white mb-12 text-center">My <span class="gradient-text">Skills</span></h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Frontend -->
+      <div class="bg-gradient-to-br from-blue-500/10 to-indigo-500/10 border border-blue-500/30 rounded-xl p-8 backdrop-blur-sm">
+        <div class="w-16 h-16 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center mb-6">
+          <i class="fas fa-code text-white text-2xl"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-4">Frontend Development</h3>
+        <ul class="space-y-3">
+          <li class="flex items-center gap-3 text-gray-300">
+            <i class="fas fa-check text-blue-400"></i> React & Vue.js
+          </li>
+          <li class="flex items-center gap-3 text-gray-300">
+            <i class="fas fa-check text-blue-400"></i> HTML5 & CSS3
+          </li>
+          <li class="flex items-center gap-3 text-gray-300">
+            <i class="fas fa-check text-blue-400"></i> JavaScript/TypeScript
+          </li>
+          <li class="flex items-center gap-3 text-gray-300">
+            <i class="fas fa-check text-blue-400"></i> Tailwind CSS
+          </li>
+          <li class="flex items-center gap-3 text-gray-300">
+            <i class="fas fa-check text-blue-400"></i> Responsive Design
+          </li>
+        </ul>
+      </div>
+
+      <!-- Backend -->
+      <div class="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-8 backdrop-blur-sm">
+        <div class="w-16 h-16 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg flex items-center justify-center mb-6">
+          <i class="fas fa-server text-white text-2xl"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-4">Backend Development</h3>
+        <ul class="space-y-3">
+          <li class="flex items-center gap-3 text-gray-300">
+            <i class="fas fa-check text-pink-400"></i> Node.js & Express
+          </li>
+          <li class="flex items-center gap-3 text-gray-300">
+            <i class="fas fa-check text-pink-400"></i> Laravel & PHP
+          </li>
+          <li class="flex items-center gap-3 text-gray-300">
+            <i class="fas fa-check text-pink-400"></i> Python & Django
+          </li>
+          <li class="flex items-center gap-3 text-gray-300">
+            <i class="fas fa-check text-pink-400"></i> RESTful APIs
+          </li>
+          <li class="flex items-center gap-3 text-gray-300">
+            <i class="fas fa-check text-pink-400"></i> Authentication & Security
+          </li>
+        </ul>
+      </div>
+
+      <!-- Database & Tools -->
+      <div class="bg-gradient-to-br from-green-500/10 to-teal-500/10 border border-green-500/30 rounded-xl p-8 backdrop-blur-sm">
+        <div class="w-16 h-16 bg-gradient-to-br from-green-600 to-teal-600 rounded-lg flex items-center justify-center mb-6">
+          <i class="fas fa-database text-white text-2xl"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-4">Database & Tools</h3>
+        <ul class="space-y-3">
+          <li class="flex items-center gap-3 text-gray-300">
+            <i class="fas fa-check text-teal-400"></i> MongoDB & PostgreSQL
+          </li>
+          <li class="flex items-center gap-3 text-gray-300">
+            <i class="fas fa-check text-teal-400"></i> Git & GitHub
+          </li>
+          <li class="flex items-center gap-3 text-gray-300">
+            <i class="fas fa-check text-teal-400"></i> Docker & Kubernetes
+          </li>
+          <li class="flex items-center gap-3 text-gray-300">
+            <i class="fas fa-check text-teal-400"></i> AWS & Cloud Deployment
+          </li>
+          <li class="flex items-center gap-3 text-gray-300">
+            <i class="fas fa-check text-teal-400"></i> Team Collaboration
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Experience Timeline -->
+  <div class="max-w-4xl mx-auto px-4 py-20">
+    <h2 class="text-4xl font-bold text-white mb-12 text-center">My <span class="gradient-text">Experience</span></h2>
+    
+    <div class="space-y-8">
+      <!-- Experience 1 -->
+      <div class="relative flex gap-8">
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-full flex items-center justify-center">
+            <i class="fas fa-briefcase text-white"></i>
+          </div>
+          <div class="w-1 h-24 bg-gradient-to-b from-blue-600 to-transparent mt-2"></div>
+        </div>
+        <div class="flex-1 pb-8">
+          <h3 class="text-2xl font-bold text-white mb-1">Senior Full Stack Developer</h3>
+          <p class="text-blue-400 font-semibold mb-3">Tech Company Inc. (2022 - Present)</p>
+          <p class="text-gray-400">Led development of multiple full-stack applications, mentored junior developers, and implemented best practices in code quality and performance optimization.</p>
+        </div>
+      </div>
+
+      <!-- Experience 2 -->
+      <div class="relative flex gap-8">
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center">
+            <i class="fas fa-laptop-code text-white"></i>
+          </div>
+          <div class="w-1 h-24 bg-gradient-to-b from-purple-600 to-transparent mt-2"></div>
+        </div>
+        <div class="flex-1 pb-8">
+          <h3 class="text-2xl font-bold text-white mb-1">Full Stack Developer</h3>
+          <p class="text-purple-400 font-semibold mb-3">Digital Agency (2020 - 2022)</p>
+          <p class="text-gray-400">Built responsive web applications for various clients, managed project timelines, and collaborated with designers to create exceptional user experiences.</p>
+        </div>
+      </div>
+
+      <!-- Experience 3 -->
+      <div class="relative flex gap-8">
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-gradient-to-br from-green-600 to-teal-600 rounded-full flex items-center justify-center">
+            <i class="fas fa-code text-white"></i>
+          </div>
+        </div>
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold text-white mb-1">Junior Developer</h3>
+          <p class="text-green-400 font-semibold mb-3">StartUp Studio (2019 - 2020)</p>
+          <p class="text-gray-400">Started my professional journey developing web applications, learning new technologies, and participating in agile development processes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Education Section -->
+  <div class="max-w-4xl mx-auto px-4 py-20 border-t border-blue-500/30">
+    <h2 class="text-4xl font-bold text-white mb-12 text-center">My <span class="gradient-text">Education</span></h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-gradient-to-br from-blue-500/10 to-indigo-500/10 border border-blue-500/30 rounded-xl p-8 backdrop-blur-sm">
+        <h3 class="text-2xl font-bold text-white mb-2">Bachelor of Computer Science</h3>
+        <p class="text-blue-400 font-semibold mb-3">University of Dhaka (2018)</p>
+        <p class="text-gray-400">Focused on software engineering, algorithms, and web technologies. GPA: 3.8/4.0</p>
+      </div>
+      <div class="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-8 backdrop-blur-sm">
+        <h3 class="text-2xl font-bold text-white mb-2">Full Stack Web Development</h3>
+        <p class="text-purple-400 font-semibold mb-3">Online Course - Udemy (2019)</p>
+        <p class="text-gray-400">Completed comprehensive course covering modern web development, from frontend to backend technologies and deployment.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-20 border-t border-blue-500/30 bg-gradient-to-b from-slate-900/50 to-slate-950 backdrop-blur-sm">
+    <div class="container mx-auto px-4 py-12 text-center">
+      <p class="text-gray-400">© 2024 Pial Mahmud. All rights reserved.</p>
+      <p class="text-gray-500 mt-2">Made with <i class="fa-solid fa-heart text-red-500"></i> by Pial Mahmud</p>
+    </div>
+  </footer>
+</body>
+</html>
