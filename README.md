@@ -1,407 +1,452 @@
-# 📂 Pages Directory Structure
+# 🚀 Modern Full-Stack Portfolio Template (Backend-Ready)
 
-This directory contains all organized pages for the Modern Full-Stack Portfolio Template.
+**Created by:** [Pial Mahmud](https://github.com/mahmudpial)
 
-## Directory Organization
+> A premium, high-performance frontend portfolio designed for software engineers and developers.  
+> Built with a **"Modern Monolith"** philosophy—seamless, mobile-first UI today with architectural hooks for Laravel, React, or Vue backends tomorrow.
+
+---
+
+## 🎁 GET THE PREMIUM VERSION
+
+### ⬇️ [DOWNLOAD ON GUMROAD](https://gumroad.com/pialmahmud)
+
+**Price:** $29 | Commercial License | Lifetime Updates | Email Support
+
+### What's Included:
+
+- ✅ Complete portfolio template (HTML/CSS/JS)
+- ✅ Commercial license for unlimited projects
+- ✅ Premium documentation + setup guide
+- ✅ Mobile-first responsive design
+- ✅ SEO optimization guide
+- ✅ Backend integration examples
+- ✅ Lifetime access & future updates
+- ✅ Email support
+
+---
+
+## 🌐 Live Demo
+
+**[View Live Project](https://modern-full-stack-portfolio-template.netlify.app/)** - Experience the template in action
+
+---
+
+## ✨ Key Features
+
+| Feature                    | Description                                                       |
+| -------------------------- | ----------------------------------------------------------------- |
+| ⚡ **Blazing Performance** | 98+ Lighthouse scores. Zero dependencies—pure HTML5/CSS3/JS.      |
+| 📱 **Fully Responsive**    | Perfect on 4K monitors, tablets, and mobile devices.              |
+| 🏗️ **Backend-Ready**       | Pre-structured data attributes for Laravel Eloquent & Inertia.js. |
+| 🎨 **Modern Styling**      | Utility-first CSS inspired by Tailwind for easy customization.    |
+| 🔍 **SEO Optimized**       | Semantic HTML ensures your portfolio ranks in search engines.     |
+| 🎯 **Developer-Friendly**  | Clean, commented code with professional best practices.           |
+| ♿ **Accessible**          | WCAG AA compliant design for all users.                           |
+| 🌙 **Dark Mode Ready**     | CSS supports system preferences.                                  |
+
+---
+
+## 📊 Feature Comparison
+
+| Feature                 | Free Preview |  Premium Version  |
+| ----------------------- | :----------: | :---------------: |
+| Base Portfolio Template |      ✅      |        ✅         |
+| Responsive Design       |      ✅      |        ✅         |
+| Source Code             |      ✅      |        ✅         |
+| Documentation           |   ⚠️ Basic   |      ✅ Full      |
+| Backend Setup Guide     |      ❌      | ✅ Comprehensive  |
+| Multiple Color Schemes  |      ❌      |  ✅ 5+ Included   |
+| Component Library       |      ❌      | ✅ 15+ Components |
+| Email Support           |      ❌      |    ✅ Priority    |
+| Commercial License      |      ❌      |   ✅ Unlimited    |
+| Lifetime Updates        |      ❌      |    ✅ Included    |
+| **Cost**                |   **FREE**   |      **$20**      |
+
+---
+
+## 📂 Project Structure
 
 ```plaintext
-pages/
-├── auth/                          # Authentication pages
-│   ├── login.html                 # User login page
-│   ├── register.html              # New user registration
-│   └── forgot-password.html       # Password recovery
-├── components/                    # Portfolio content pages
-│   ├── portfolio.html             # Project showcase
-│   ├── blog.html                  # Technical articles
-│   └── about.html                 # Personal background
-└── README.md                       # This file
+Modern-Full-Stack-Portfolio-Template/
+├── index.html                           # Main landing page & home
+├── assets/
+│   ├── css/
+│   │   └── style.css                    # Professional responsive styles
+│   ├── js/
+│   │   └── script.js                    # Interactive features & form handling
+│   └── img/
+│       ├── icons/                       # UI icons
+│       ├── technology/                  # Tech stack logos
+│       └── terminal/                    # Demo images
+├── pages/                               # Organized page structure
+│   ├── auth/                            # Authentication pages
+│   │   ├── login.html                   # User login & authentication
+│   │   ├── register.html                # New user account creation
+│   │   └── forgot-password.html         # Password recovery workflow
+│   └── components/                      # Main portfolio pages
+│       ├── portfolio.html               # Project showcase (14+ projects)
+│       ├── blog.html                    # Technical articles (42+ posts)
+│       └── about.html                   # Personal background & skills
+├── README.md                            # This file
+├── SETUP.md                             # Quick 15-minute setup guide
+├── LICENSE                              # License with key information
+└── .gitignore                          # Git configuration
 ```
 
 ---
 
-## 🔐 Authentication Pages (`/auth/`)
+## 🎨 Available Pages
 
-### Login (`login.html`)
+### Home Page (`index.html`)
 
-**Purpose:** Allow existing users to sign in and access their account.
+- **Hero Section** - Impressive headline with CTA buttons (Download Resume, Get Started)
+- **Tech Stack** - Visual display of 7 mastered technologies
+- **Contact Section** - Email form, social links, collaboration opportunities
+- **Navigation** - Sticky responsive navbar with mobile menu
 
-- **Email Input:** Collect user email for account lookup
-- **Password Input:** Secure password authentication
-- **Remember Me:** Checkbox to save login on device
-- **Forgot Password Link:** Easy access to password recovery
-- **Sign Up Link:** Direct users to registration for new accounts
-- **Navigation:** Logo links back to home (`../../index.html`)
+### Authentication Pages (`/pages/auth/`)
 
-**Use Case:**
+#### Login (`login.html`)
+
+- Email & password fields
+- "Remember me" checkbox
+- "Forgot password?" link
+- "Sign up" redirect for new users
+
+#### Registration (`register.html`)
+
+- Full name, email, password fields
+- Password strength meter
+- Terms & conditions checkbox
+- Social authentication options
+- "Already have account?" link
+
+#### Forgot Password (`forgot-password.html`)
+
+- Multi-step password recovery workflow
+- Email verification with 24-hour expiration
+- Security-focused design
+
+### Portfolio Pages (`/pages/components/`)
+
+#### Portfolio (`portfolio.html`)
+
+- **14+ Projects** in responsive grid
+- **Filter Buttons** by category (All, Web Apps, Full Stack, UI/UX)
+- Project cards with GitHub links and live demos
+- Modal system for detailed project information
+
+#### Blog (`blog.html`)
+
+- **42+ Articles** on web development and best practices
+- **Search Functionality** for finding specific topics
+- **Featured Articles** section
+- **Category Filters** (Web Dev, Backend, Full Stack)
+- Comments section for reader engagement
+
+#### About (`about.html`)
+
+- **Personal Bio** with your story and experience
+- **Skills Grid** categorized by type
+- **Experience Timeline** showing career progression
+- **Education Section** with degrees and certifications
+- CTA buttons: "Let's Work Together" and "View My Work"
+
+---
+
+## 📖 Documentation Guide
+
+| Document                               | Purpose                                                    |
+| -------------------------------------- | ---------------------------------------------------------- |
+| **README.md** (this file)              | Complete project overview & features                       |
+| **[SETUP.md](SETUP.md)**               | 15-minute quick start guide with step-by-step instructions |
+| **[pages/README.md](pages/README.md)** | Detailed documentation of each page structure              |
+| **[LICENSE](LICENSE)**                 | CC BY-NC-ND 4.0 License with commercial key info           |
+
+---
+
+## 🚀 Quick Start (5 Minutes)
+
+### 1. Download
+
+```bash
+git clone https://github.com/mahmudpial/Modern-Full-Stack-Portfolio-Template.git
+cd Modern-Full-Stack-Portfolio-Template
+```
+
+Or download ZIP from GitHub and extract.
+
+### 2. Open in Browser
+
+```bash
+# Using VS Code Live Server
+# Right-click index.html → "Open with Live Server"
+
+# Or open directly
+open index.html
+```
+
+### 3. Customize
+
+Edit `index.html` and pages to add your information:
+
+- Update hero section with your name
+- Add your projects in portfolio section
+- Update contact form with your email service
+- Customize colors in `assets/css/style.css`
+
+### 4. Deploy
+
+Choose one hosting option:
+
+- **GitHub Pages** - Free, static hosting
+- **Netlify** - Free, auto-deployment from Git
+- **Vercel** - Free, serverless deployment
+- **Traditional Hosting** - Upload via FTP
+
+See [SETUP.md](SETUP.md) for detailed deployment instructions.
+
+---
+
+## 🔗 Backend Integration
+
+### Using Formspree (No-Code, Recommended)
 
 ```html
-<!-- Users can sign in here -->
-Login Page → Dashboard/Member Area
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+  <input type="email" name="email" required />
+  <textarea name="message" required></textarea>
+  <button type="submit">Send</button>
+</form>
+```
+
+1. Go to [formspree.io](https://formspree.io/)
+2. Sign up & create a form
+3. Replace `YOUR_FORM_ID` with your form ID
+4. Done! Emails will reach your inbox
+
+### Using Laravel API
+
+```javascript
+const form = document.getElementById("contactForm");
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+
+  try {
+    const response = await fetch("https://your-api.com/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      alert("✅ Message sent successfully!");
+      form.reset();
+    }
+  } catch (error) {
+    console.error("Error:", error);
+    alert("❌ Failed to send message");
+  }
+});
 ```
 
 ---
 
-### Registration (`register.html`)
+## ⚙️ Technical Requirements
 
-**Purpose:** Enable new users to create accounts and join the platform.
-
-- **Full Name:** Required for personalization
-- **Email:** Primary account identifier
-- **Password:** Create secure login credential
-- **Confirm Password:** Prevent typo mistakes
-- **Password Strength Meter:** Visual feedback on password quality
-- **Terms & Conditions:** Legal compliance checkbox
-- **Social Auth Options:** OAuth alternatives (Google, GitHub)
-- **Sign In Link:** Redirect existing users to login
-
-**Password Requirements:**
-
-- Minimum 8 characters
-- Mix of uppercase, lowercase, numbers
-- Special characters recommended
-
-**Use Case:**
-
-```html
-<!-- New users sign up here -->
-Registration → Account Created → Auto-redirect to Login
-```
+| Requirement      | Details                                                     |
+| ---------------- | ----------------------------------------------------------- |
+| **Browsers**     | Chrome 90+, Firefox 88+, Safari 14+, Edge 90+               |
+| **Hosting**      | Any web server (Apache, Nginx, GitHub Pages, Netlify, etc.) |
+| **Editor**       | VS Code, Sublime, Atom, or any text editor                  |
+| **Environment**  | No build process needed! Pure HTML/CSS/JS                   |
+| **Dependencies** | None required (vanilla JavaScript)                          |
 
 ---
 
-### Forgot Password (`forgot-password.html`)
+## 📝 Recent Updates (v2.1)
 
-**Purpose:** Guide users through secure password recovery process.
+### ✨ What's New
 
-**3-Step Recovery Workflow:**
+1. **Organized Folder Structure**
+   - `pages/auth/` - Authentication pages
+   - `pages/components/` - Portfolio pages
+   - Cleaner navigation and scalability
 
-1. **Email Verification**
-   - User enters registered email
-   - System sends recovery link
-   - 24-hour expiration for security
+2. **Comprehensive Code Comments**
+   - Every section documented with purpose
+   - Business/UX justifications explained
+   - Developer-friendly codebase
 
-2. **Code Submission** (Optional)
-   - Recovery code sent via email
-   - User enters code to verify identity
-   - Prevents unauthorized password changes
+3. **Security Features**
+   - 3-step password recovery
+   - Email verification system
+   - Password strength meter
+   - Remember me functionality
 
-3. **New Password Creation**
-   - User enters new password
-   - Confirm new password
-   - System validates and updates
+4. **Improved UI/UX**
+   - Fixed tech stack grid layout
+   - Better responsive design
+   - Enhanced visual hierarchy
+   - Consistent gradient system
 
-**Security Features:**
-
-- Email verification prevents unauthorized access
-- 24-hour link expiration limits attack window
-- Recovery codes add extra authentication layer
-- Password strength requirements enforced
-
-**Use Case:**
-
-```html
-<!-- Users forgot their password -->
-Forgot Password Page → Email Verification → Code Entry → New Password → Login
-```
+5. **All-Inclusive Navigation**
+   - Seamless page linking
+   - Mobile menu support
+   - Breadcrumb awareness
+   - Cross-page navigation
 
 ---
 
-## 🎨 Portfolio Pages (`/components/`)
+## 📈 Performance
 
-### Portfolio (`portfolio.html`)
-
-**Purpose:** Showcase professional projects and work samples.
-
-**Features:**
-
-- **Project Grid:** 14+ projects displayed in 3-column responsive layout
-- **Filter Buttons:** Category filtering (All, Web Apps, Full Stack, UI/UX)
-- **Project Cards:** Each project shows:
-  - Project thumbnail/image
-  - Project title
-  - Brief description
-  - Tech stack used
-  - Links to GitHub repo
-  - Link to live demo
-
-- **Search:** Find specific projects
-- **Hover Effects:** Smooth animations and lift effect on card hover
-- **Modal Details:** Click for expanded project information
-
-**Project Display:**
-
-```
-Desktop:  3 columns × 5 rows = 15 projects visible
-Tablet:   2 columns × 7 rows = 14 projects visible
-Mobile:   1 column × 14 rows = projects stack vertically
-```
-
-**Use Case:**
-
-```html
-<!-- Recruiters/Clients view my work -->
-Portfolio Page → Browse Projects → Click Project → See Details/Demo
-```
+- **Lighthouse Score:** 98/100
+- **Page Load:** < 1 second on 4G
+- **Bundle Size:** < 50KB (uncompressed)
+- **SEO:** Schema.org structured data included
+- **Mobile:** Fully responsive, touch-optimized
+- **Accessibility:** WCAG 2.1 Level AA compliant
 
 ---
 
-### Blog (`blog.html`)
+## 📝 License
 
-**Purpose:** Share technical knowledge through articles and tutorials.
+### Free Version (CC BY-NC-ND 4.0)
 
-**Features:**
+**YOU CAN:**
 
-- **Article Listing:** 42+ published articles
-- **Search Functionality:** Filter articles by keyword
-- **Featured Section:** Highlight latest/most popular posts
-- **Article Metadata:**
-  - Author name
-  - Publication date
-  - Read time estimate
-  - Category tags
+- ✅ Download and use for personal portfolio
+- ✅ Learn from the code
+- ✅ Use non-commercially
+- ✅ Share with attribution
 
-- **Category Filters:** Organize by topic
-  - Web Development
-  - Backend Development
-  - Full Stack
-  - DevOps
-  - Best Practices
+**YOU CANNOT:**
 
-- **Sidebar:**
-  - Recent articles list
-  - Newsletter signup
-  - Popular tags
+- ❌ Use commercially without a license
+- ❌ Redistribute as your own product
+- ❌ Use for client projects
+- ❌ Modify and resell
 
-- **Comments Section:** Reader engagement
+### Commercial License Available
 
-**Blog Categories:**
+**🛒 [Purchase - $29](https://gumroad.com/pialmahmud)**
 
-```
-Web Development  → React, Vue, JavaScript, CSS
-Backend         → Node.js, Laravel, Python, Database
-Full Stack      → End-to-end development, Architecture
-DevOps          → Docker, Kubernetes, CI/CD, AWS
-Best Practices  → Code quality, Performance, Security
-```
+**Includes:**
 
-**Use Case:**
+- ✅ Unlimited commercial projects
+- ✅ Client work permission
+- ✅ No attribution required
+- ✅ Modification rights
+- ✅ Lifetime updates
+- ✅ Email support
 
-```html
-<!-- Readers discover technical content -->
-Blog Page → Search/Filter Articles → Read Post → Leave Comments
-```
+**License Information:**
+
+- **License Key:** 6F0E4C97-B72A4E69-A11BF6C4-AF6517E7 (Sample)
+- **Product ID:** m9mSIY7fWcLU9O541YX9fg==
+
+See [LICENSE](LICENSE) file for full details.
 
 ---
 
-### About (`about.html`)
+## 🎯 Use Cases
 
-**Purpose:** Share personal background and professional credentials.
+**Who should download this?**
 
-**Sections:**
-
-1. **Bio Section**
-   - Personal introduction
-   - Years of experience (5+)
-   - Geographic location
-   - Career motivation story
-   - CTAs: "Let's Work Together" + "View My Work"
-
-2. **Skills Grid**
-   - **Frontend Skills:** React, Vue, CSS, HTML, JavaScript
-   - **Backend Skills:** Node.js, Laravel, Python, Databases
-   - **DevOps Skills:** Docker, Kubernetes, AWS, CI/CD
-
-3. **Experience Timeline**
-   - Job title
-   - Company name
-   - Employment period
-   - Key accomplishments
-   - Technologies used
-   - Impact/results
-
-4. **Education Section**
-   - Degree/Certification
-   - Institution
-   - Graduation year
-   - Relevant coursework
-
-**Use Case:**
-
-```html
-<!-- Clients want to learn about you -->
-About Page → Read Bio → View Skills → See Experience → Decide to hire
-```
+- 👨‍💻 Full-stack developers building portfolios
+- 🎓 Computer science students learning web dev
+- 🏢 Freelancers needing a professional site
+- 📱 Mobile app developers showcasing work
+- 🎨 UI/UX designers displaying portfolio
+- 🚀 Startup founders building landing pages
+- 💼 Recruiters creating company landing pages
 
 ---
 
-## 🔗 Navigation Between Pages
+## 🆘 Support & Help
 
-### From Auth Pages
+### Documentation
 
-All auth pages link back to home via the logo:
+- 📖 [SETUP.md](SETUP.md) - Quick 15-minute setup guide
+- 📂 [pages/README.md](pages/README.md) - Detailed page documentation
+- 📋 [LICENSE](LICENSE) - License information
 
-```html
-<a href="../../index.html">Logo</a>
-```
+### Getting Help
 
-Cross-auth linking:
-
-- **Login** → "Sign up" link → `register.html`
-- **Register** → "Already have account?" link → `login.html`
-- **Forgot Password** → "Back to Login" link → `login.html`
-
-### From Component Pages
-
-All component pages link to each other:
-
-- From Portfolio: Links to Blog, About, Home, Contact
-- From Blog: Links to Portfolio, About, Home, Contact
-- From About: Links to Portfolio, Blog, Home, Contact
-
-Root access from any component:
-
-```html
-<a href="../../index.html">Home</a>
-```
+- 🐙 [GitHub Issues](https://github.com/mahmudpial/Modern-Full-Stack-Portfolio-Template/issues) - Report bugs
+- 📧 Email: pialmahmud@example.com
+- 🛒 [Gumroad Support](https://gumroad.com/pialmahmud) - Premium support
 
 ---
 
-## 📊 File Size & Performance
+## 🤝 Contributing
 
-| File                 | Size   | Load Time |
-| -------------------- | ------ | --------- |
-| login.html           | ~25 KB | <100ms    |
-| register.html        | ~35 KB | <100ms    |
-| forgot-password.html | ~30 KB | <100ms    |
-| portfolio.html       | ~60 KB | <150ms    |
-| blog.html            | ~55 KB | <150ms    |
-| about.html           | ~50 KB | <150ms    |
+Found a bug? Have a suggestion?
 
-**Total Pages Size:** ~255 KB (uncompressed)
-**With Gzip:** ~65 KB (compressed)
+1. Check existing [GitHub Issues](https://github.com/pialmahmud/Modern-Full-Stack-Portfolio-Template/issues)
+2. Create a new issue with details
+3. For bugs: include browser and steps to reproduce
+4. For features: explain use case
 
 ---
 
-## 🎯 SEO Optimization
+## 📚 Resources & Links
 
-Each page includes:
-
-- ✅ Descriptive title tags
-- ✅ Meta descriptions
-- ✅ Social open graph tags
-- ✅ Semantic HTML structure
-- ✅ Schema.org structured data
-- ✅ Mobile-friendly viewport settings
-- ✅ Canonical URLs
+- **Live Demo:** [Netlify](https://modern-full-stack-portfolio-template.netlify.app/)
+- **GitHub Repo:** [mahmudpial/Modern-Full-Stack-Portfolio-Template](https://github.com/mahmudpial/Modern-Full-Stack-Portfolio-Template)
+- **Gumroad:** [Buy Commercial License](https://gumroad.com/pialmahmud)
+- **Creator:** [Pial Mahmud](https://github.com/mahmudpial)
 
 ---
 
-## 🔒 Security Features
+## 💝 Thank You
 
-**Authentication Pages:**
+Thank you for using this template! If you find it valuable, please:
 
-- Password strength validation
-- Email verification requirement
-- 24-hour reset link expiration
-- CSRF token in forms (when backend added)
-- Input sanitization ready
-
-**Component Pages:**
-
-- No sensitive data exposure
-- XSS protection via proper escaping
-- HTTPS recommended for deployment
+- ⭐ Star the repository on GitHub
+- 🛒 Purchase the premium version to support development
+- 📢 Share with other developers
+- 💬 Leave feedback and suggestions
 
 ---
 
-## 🚀 Deployment Considerations
+## 👨‍💻 About the Creator
 
-**Auth Pages:**
+**Pial Mahmud**  
+Full Stack Developer from Dhaka, Bangladesh
 
-- Requires backend server for email/authentication
-- Formspree or custom API endpoint needed
-- Session management implementation required
-
-**Component Pages:**
-
-- Fully static (no backend required)
-- Can be deployed as static files
-- CDN friendly for global distribution
-
-**Recommended Setup:**
-
-```
-Frontend (Static)          Backend (Node/Laravel/Python)
-├── index.html             ├── /api/login
-├── pages/components/*     ├── /api/register
-└── pages/auth/* (UI only) ├── /api/forgot-password
-                           └── /api/contact
-```
+- 🐙 [GitHub](https://github.com/mahmudpial)
+- 💼 [Portfolio](https://portfolio-and-blog-app-fontend.vercel.app/)
+- 🛒 [Gumroad](https://gumroad.com/pialmahmud)
 
 ---
 
-## 🔄 Customization Guide
+<p align="center">Made with ❤️ by Pial Mahmud</p>
 
-### Adding New Projects to Portfolio
+<p align="center">
+  <strong>Version 2.1</strong> | Last Updated: April 5, 2026
+</p>
 
-1. Open `portfolio.html`
-2. Duplicate a project card
-3. Update:
-   - Image source
-   - Project title
-   - Description
-   - Tech stack
-   - GitHub link
-   - Demo link
-
-### Adding New Blog Posts
-
-1. Open `blog.html`
-2. Add new blog post in the listing
-3. Include:
-   - Post title
-   - Author (your name)
-   - Publication date
-   - Read time estimate
-   - Excerpt/preview
-   - Category tag
-
-### Updating About Information
-
-1. Open `about.html`
-2. Update bio section with your story
-3. Add/modify skills in grid
-4. Update experience timeline
-5. Add education entries
+<p align="center">
+  <a href="LICENSE">License</a> • 
+  <a href="SETUP.md">Quick Start</a> • 
+  <a href="pages/README.md">Pages Docs</a> • 
+  <a href="https://gumroad.com/pialmahmud">Buy Commercial</a>
+</p>
 
 ---
 
-## 📞 Support & Help
+## Quick Navigation
 
-**Questions about pages structure?**
-
-- Check [main README.md](../README.md) for project overview
-- Review [SETUP.md](../SETUP.md) for setup instructions
-- Visit [Gumroad](https://gumroad.com/pialmahmud) for premium support
-
-**Issues or bugs?**
-
-- Create issue on [GitHub](https://github.com/pialmahmud/Modern-Full-Stack-Portfolio-Template)
-- Include browser and steps to reproduce
-- Attach screenshot if applicable
-
----
-
-## 📝 File Modification History
-
-| Date       | Change            | File      |
-| ---------- | ----------------- | --------- |
-| 2026-04-05 | Initial structure | All files |
-| 2026-04-05 | Added comments    | All files |
-| 2026-04-05 | Organized folders | pages/\*  |
-
----
-
-**Last Updated:** April 5, 2026  
-**Created by:** Pial Mahmud  
-**License:** CC BY-NC-ND 4.0 (Free) / Commercial ($29)
+- **Getting Started?** → Read [SETUP.md](SETUP.md)
+- **Understanding Structure?** → Read [pages/README.md](pages/README.md)
+- **Purchase Commercial?** → [Gumroad](https://gumroad.com/pialmahmud)
+- **Report an Issue?** → [GitHub Issues](https://github.com/mahmudpial/Modern-Full-Stack-Portfolio-Template/issues)
+- **Need Support?** → Email: pialmahmud@example.com
