@@ -343,14 +343,11 @@ Thank you for using this template! If you find it valuable, please:
 
 ---
 
-## 👨‍💻 About the Creator
+## 🙋‍♂️ Author
 
-**Pial Mahmud**  
-Full Stack Developer from Dhaka, Bangladesh
-
-- 🐙 [GitHub](https://github.com/mahmudpial)
-- 💼 [Portfolio](https://portfolio-and-blog-app-fontend.vercel.app/)
-- 🛒 [Gumroad](https://gumroad.com/pialmahmud)
+**Pial Mahmud**
+Full Stack Web Developer | CSE Student @ Daffodil International University
+[GitHub](https://github.com/mahmudpial) · [Portfolio](https://portfolio-and-blog-app-fontend.vercel.app/)
 
 ---
 
